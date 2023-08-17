@@ -13,5 +13,6 @@ public class Square {
         }
 
         System.out.print("8".repeat(sideLength));
+        System.out.println('\n');
     }
 }
