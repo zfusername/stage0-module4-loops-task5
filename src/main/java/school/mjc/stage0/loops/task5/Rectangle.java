@@ -15,5 +15,6 @@ public class Rectangle {
         if (height > 1) {
             System.out.print("8".repeat(length));
         }
+        System.out.println('\n');
     }
 }
