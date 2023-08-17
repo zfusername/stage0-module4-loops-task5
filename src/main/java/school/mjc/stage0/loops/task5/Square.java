@@ -2,16 +2,21 @@ package school.mjc.stage0.loops.task5;
 
 public class Square {
     public void printSquareFrom8s(int sideLength){
-        if(sideLength < 0) {
-            System.out.print("8".repeat(sideLength) + "\n");
-        }
-        // Print the middle lines
-        for (int i = 2; i < sideLength; i++) {
-            System.out.print("8");
-            System.out.print(" ".repeat(sideLength - 2));
-            System.out.print("8\n");
-        }
+        String output = "";
 
-        System.out.print("8".repeat(sideLength));
+        if(sideLength>1) {
+            output += "8".repeat(sideLength) + "\n";
+
+            // Print the middle lines
+            for (int i = 2; i < sideLength; i++) {
+                output += "8";
+                output += " ".repeat(sideLength - 2);
+                output += "8\n";
+            }
+
+            // Print the bottom line
+            output += "8".repeat(sideLength);
+        }
+        System.out.println(output);
     }
 }
